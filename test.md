@@ -1,1 +1,1 @@
-[a relative link](test/otherfile.md)
+[a relative link](test/otherfile(1).md)
