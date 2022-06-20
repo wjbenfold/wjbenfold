@@ -1,0 +1,25 @@
+[alias]
+        ci = commit
+        co = checkout
+        st = status
+        br = branch
+        unstage = reset HEAD --
+        uncommit = reset --soft HEAD^
+        last = log -1 HEAD
+    wdiff = diff --color-words
+    vlog = log --graph --date-order --date=relative --pretty=format:\"%C(cyan)%h: %Cblue - %an - %Cgreen %C(cyan)%ar:%Creset%n%s%n\" --color
+    glog = log --oneline --decorate --graph --all
+
+    nb = "!f() {                                  \
+                [ $# -eq 1 ] && (                 \
+                 git fetch upstream;              \
+                 git checkout -b $1 upstream/main;\
+                )                                 \
+               } ; f"
+
+    nbm = "!f() {                                    \
+                 [ $# -eq 1 ] && (                   \
+                  git fetch upstream;                \
+                  git checkout -b $1 upstream/master;\
+                 )                                   \
+                } ; f"
