@@ -1,0 +1,35 @@
+# Functions
+
+#copy and go to dir
+cpg (){
+  if [ -d "$2" ];then
+    cp $1 $2 && cd $2
+  else
+    cp $1 $2
+  fi
+}
+
+#move and go to dir
+mvg (){
+  if [ -d "$2" ];then
+    mv $1 $2 && cd $2
+  else
+    mv $1 $2
+  fi
+}
+
+# Aliases
+alias ls='ls -h --color=auto'
+alias ll='ls -l'
+alias la='ls -A'
+alias grep='grep --color=auto'
+alias activate='conda activate'
+alias deactivate='conda deactivate'
+
+alias godev='conda activate dev;'
+
+alias cdmydir='cd ~/mydir'
+
+alias gotests='python -m unittest -v'
+
+alias sshXXX='ssh will.benfold@XXX'
