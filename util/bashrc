@@ -33,3 +33,8 @@ alias cdmydir='cd ~/mydir'
 alias gotests='python -m unittest -v'
 
 alias sshXXX='ssh will.benfold@XXX'
+
+# TODO:
+# - stderr in red and echo to stderr
+# - better history (https://blog.sanctum.geek.nz/better-bash-history/)
+# - git ps1 info
